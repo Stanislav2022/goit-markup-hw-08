@@ -13,6 +13,7 @@
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
 
@@ -47,6 +48,43 @@
                         </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
+            <button class="btn-burger" type="button">
+                <svg width="40" height="40">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                </svg></div>
+            </button>
+        </div>
+        <div class="mobile-menu">
+            <button class="mobile-menu__btn-close" data-modal-close>
+                <svg class="mobile-menu__icon-close" width="40" height="40">
+                    <use href="/images/icons.svg#icon-menu-close"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu__nav-list">
+                <li class="mobile-menu__nav-item">
+                    <a class="mobile-menu__nav-link" href="">Студия</a>
+                </li>
+                <li class="mobile-menu__nav-item">
+                    <a class="mobile-menu__nav-link" href="">Портфолио</a>
+                </li>
+                <li class="mobile-menu__nav-item">
+                    <a class="mobile-menu__nav-link" href="">Контакты</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__contact-list">
+                <li class="mobile-menu__contact-item mobile-menu__contact-item--tel">
+                    <a class="mobile-menu__contact-link mobile-menu__contact-link--tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile-menu__contact-item mobile-menu__contact-item--mail">
+                    <a class="mobile-menu__contact-link mobile-menu__contact-link--mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">LinkedIn</a></li>
+            </ul>
         </div>
     </header>
 
@@ -56,7 +94,7 @@
                 <h1 class="visually-hidden">Портфолио</h1>
 
                <!-- filter -->
-                <!-- <ul class="filter-list ">
+                <ul class="filter-list">
                     <li class="filter-list__item">
                         <button class="filter-list__btn" type="button">Все</button>
                     </li>
@@ -72,10 +110,10 @@
                     <li class="filter-list__item">
                         <button class="filter-list__btn" type="button">Маркетинг</button>
                     </li>
-                </ul> -->
+                </ul>
 
                 <!-- projects -->
-                <!-- <ul class="projects ">
+                <ul class="projects ">
                     <li class="projects__item">
                         <a class="projects__link" href="">
                             <div class="projects__overlay">
@@ -193,15 +231,15 @@
                             </div>
                         </a>
                     </li>
-                </ul> -->
+                </ul>
             </div>
         </section>
     </main>
     
     <!-- footer -->
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container footer__container ">
-            <div class="foter__section">
+            <div class="foter__section foter__section--first">
                 <a class="logo" href="/">Web<span class="logo__footer">Studio</span></a>
                 <address class="footer__address">
                     <ul class="footer__list ">
@@ -217,7 +255,7 @@
                     </ul>
                 </address>
             </div>
-            <div>
+            <div class="foter__section">
                 <h3 class="foter__section-title">присоединяйтесь</h3>
                 <ul class="social-list ">
                     <li class="social-list__item">
@@ -265,6 +303,6 @@
                 </form>
             </div>
         </div>
-    </footer> -->
+    </footer>
 </body>
 </html>
