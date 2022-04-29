@@ -26,6 +26,7 @@
     }
     .mobile-menu__btn-close {
         position: absolute;
+        z-index: 3;
         right: 15px;
         top: 10px;
         display: flex;
