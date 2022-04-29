@@ -55,40 +55,42 @@
             </button>
         </div>
         <div class="mobile-menu" data-menu>
-            <button class="mobile-menu__btn-close" data-menu-close>
-                <svg class="mobile-menu__icon-close" width="40" height="40">
-                    <use href="/images/icons.svg#icon-menu-close"></use>
-                </svg>
-            </button>
-            <ul class="mobile-menu__nav-list">
-                <li class="mobile-menu__nav-item">
-                    <a class="mobile-menu__nav-link" href="index.html">Студия</a>
-                </li>
-                <li class="mobile-menu__nav-item">
-                    <a class="mobile-menu__nav-link" href="">Портфолио</a>
-                </li>
-                <li class="mobile-menu__nav-item">
-                    <a class="mobile-menu__nav-link" href="">Контакты</a>
-                </li>
-            </ul>
-            <ul class="mobile-menu__contact-list">
-                <li class="mobile-menu__contact-item mobile-menu__contact-item--tel">
-                    <a class="mobile-menu__contact-link mobile-menu__contact-link--tel" href="tel:+380961111111">+38 096 111 11 11</a>
-                </li>
-                <li class="mobile-menu__contact-item mobile-menu__contact-item--mail">
-                    <a class="mobile-menu__contact-link mobile-menu__contact-link--mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-            </ul>
-            <ul class="mobile-menu__social-list">
-                <li class="mobile-menu__social-item">
-                    <a class="mobile-menu__social-link" href="">Instagram</a></li>
-                <li class="mobile-menu__social-item">
-                    <a class="mobile-menu__social-link" href="">Twitter</a></li>
-                <li class="mobile-menu__social-item">
-                    <a class="mobile-menu__social-link" href="">Facebook</a></li>
-                <li class="mobile-menu__social-item">
-                    <a class="mobile-menu__social-link" href="">LinkedIn</a></li>
-            </ul>
+            <div class="container mobile-menu__container">
+                <button class="mobile-menu__btn-close" data-menu-close>
+                    <svg class="mobile-menu__icon-close" width="40" height="40">
+                        <use href="/images/icons.svg#icon-menu-close"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu__nav-list">
+                    <li class="mobile-menu__nav-item">
+                        <a class="mobile-menu__nav-link" href="index.html">Студия</a>
+                    </li>
+                    <li class="mobile-menu__nav-item">
+                        <a class="mobile-menu__nav-link" href="portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu__nav-item">
+                        <a class="mobile-menu__nav-link" href="">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="mobile-menu__contact-list">
+                    <li class="mobile-menu__contact-item mobile-menu__contact-item--tel">
+                        <a class="mobile-menu__contact-link mobile-menu__contact-link--tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-menu__contact-item mobile-menu__contact-item--mail">
+                        <a class="mobile-menu__contact-link mobile-menu__contact-link--mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-menu__social-list">
+                    <li class="mobile-menu__social-item">
+                        <a class="mobile-menu__social-link" href="">Instagram</a></li>
+                    <li class="mobile-menu__social-item">
+                        <a class="mobile-menu__social-link" href="">Twitter</a></li>
+                    <li class="mobile-menu__social-item">
+                        <a class="mobile-menu__social-link" href="">Facebook</a></li>
+                    <li class="mobile-menu__social-item">
+                        <a class="mobile-menu__social-link" href="">LinkedIn</a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -121,7 +123,15 @@
                     <li class="projects__item">
                         <a class="projects__link" href="">
                             <div class="projects__overlay">
-                                <img src="./images/site.jpg" alt="Веб-сайт" width="370">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="./images/desc/site.webp 1x, ./images/desc/site@2x.webp 2x" type="image/webp"/>
+                                    <source media="(min-width: 1200px)" srcset="./images/desc/site.jpg 1x, ./images/desc/site@2x.jpg 2x"/>
+                                    <source media="(min-width: 768px)" srcset="./images/tab/site.webp 1x, ./images/tab/site@2x.webp 2x" type="image/webp"/>
+                                    <source media="(min-width: 768px)" srcset="./images/tab/site.jpg 1x, ./images/tab/site@2x.jpg 2x"/>
+                                    <source media="(max-width: 767px)" srcset="./images/mob/site.webp 1x, ./images/mob/site@2x.webp 2x" type="image/webp"/>
+                                    <source media="(max-width: 767px)" srcset="./images/mob/site.jpg 1x, ./images/mob/site@2x.jpg 2x"/>
+                                    <img src="./images/desc/site.jpg" alt="Веб-сайт">
+                                </picture>
                                 <p class="projects__overlay--description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>
                             </div>
@@ -134,7 +144,15 @@
                     <li class="projects__item">
                         <a class="projects__link" href="">
                             <div class="projects__overlay">
-                                <img src="./images/basketball.jpg" alt="Баскетбол" width="370">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="./images/desc/basketball.webp 1x, ./images/desc/basketball@2x.webp 2x" type="image/webp"/>
+                                    <source media="(min-width: 1200px)" srcset="./images/desc/basketball.jpg 1x, ./images/desc/basketball@2x.jpg 2x"/>
+                                    <source media="(min-width: 768px)" srcset="./images/tab/basketball.webp 1x, ./images/tab/basketball@2x.webp 2x" type="image/webp"/>
+                                    <source media="(min-width: 768px)" srcset="./images/tab/basketball.jpg 1x, ./images/tab/basketball@2x.jpg 2x"/>
+                                    <source media="(max-width: 767px)" srcset="./images/mob/basketball.webp 1x, ./images/mob/basketball@2x.webp 2x" type="image/webp"/>
+                                    <source media="(max-width: 767px)" srcset="./images/mob/basketball.jpg 1x, ./images/mob/basketball@2x.jpg 2x"/>
+                                    <img src="./images/desc/basketball.jpg" alt="Баскетбол">
+                                </picture>
                                 <p class="projects__overlay--description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>
                             </div>
@@ -147,7 +165,15 @@
                     <li class="projects__item">
                         <a class="projects__link" href="">
                             <div class="projects__overlay">
-                                <img src="./images/restaurant.jpg" alt="Вывеска ресторана" width="370">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="./images/desc/restaurant.webp 1x, ./images/desc/restaurant@2x.webp 2x" type="image/webp"/>
+                                    <source media="(min-width: 1200px)" srcset="./images/desc/restaurant.jpg 1x, ./images/desc/restaurant@2x.jpg 2x"/>
+                                    <source media="(min-width: 768px)" srcset="./images/tab/restaurant.webp 1x, ./images/tab/restaurant@2x.webp 2x" type="image/webp"/>
+                                    <source media="(min-width: 768px)" srcset="./images/tab/restaurant.jpg 1x, ./images/tab/restaurant@2x.jpg 2x"/>
+                                    <source media="(max-width: 767px)" srcset="./images/mob/restaurant.webp 1x, ./images/mob/restaurant@2x.webp 2x" type="image/webp"/>
+                                    <source media="(max-width: 767px)" srcset="./images/mob/restaurant.jpg 1x, ./images/mob/restaurant@2x.jpg 2x"/>
+                                    <img src="./images/desc/restaurant.jpg" alt="Вывеска ресторана">
+                                </picture>
                                 <p class="projects__overlay--description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>
                             </div>
@@ -160,7 +186,15 @@
                     <li class="projects__item">
                         <a class="projects__link" href="">
                             <div class="projects__overlay">
-                                <img src="./images/headphones.jpg" alt="Наушники" width="370">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="./images/desc/headphones.webp 1x, ./images/desc/headphones@2x.webp 2x" type="image/webp"/>
+                                    <source media="(min-width: 1200px)" srcset="./images/desc/headphones.jpg 1x, ./images/desc/headphones@2x.jpg 2x"/>
+                                    <source media="(min-width: 768px)" srcset="./images/tab/headphones.webp 1x, ./images/tab/headphones@2x.webp 2x" type="image/webp"/>
+                                    <source media="(min-width: 768px)" srcset="./images/tab/headphones.jpg 1x, ./images/tab/headphones@2x.jpg 2x"/>
+                                    <source media="(max-width: 767px)" srcset="./images/mob/headphones.webp 1x, ./images/mob/headphones@2x.webp 2x" type="image/webp"/>
+                                    <source media="(max-width: 767px)" srcset="./images/mob/headphones.jpg 1x, ./images/mob/headphones@2x.jpg 2x"/>
+                                    <img src="./images/desc/headphones.jpg" alt="Наушники">
+                                </picture>
                                 <p class="projects__overlay--description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>
                             </div>
@@ -173,7 +207,15 @@
                     <li class="projects__item">
                         <a class="projects__link" href="">
                             <div class="projects__overlay">
-                                <img src="./images/package.jpg" alt="Коробки" width="370">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="./images/desc/package.webp 1x, ./images/desc/package@2x.webp 2x" type="image/webp"/>
+                                    <source media="(min-width: 1200px)" srcset="./images/desc/package.jpg 1x, ./images/desc/package@2x.jpg 2x"/>
+                                    <source media="(min-width: 768px)" srcset="./images/tab/package.webp 1x, ./images/tab/package@2x.webp 2x" type="image/webp"/>
+                                    <source media="(min-width: 768px)" srcset="./images/tab/package.jpg 1x, ./images/tab/package@2x.jpg 2x"/>
+                                    <source media="(max-width: 767px)" srcset="./images/mob/package.webp 1x, ./images/mob/package@2x.webp 2x" type="image/webp"/>
+                                    <source media="(max-width: 767px)" srcset="./images/mob/package.jpg 1x, ./images/mob/package@2x.jpg 2x"/>
+                                    <img src="./images/desc/package.jpg" alt="Коробки">
+                                </picture>
                                 <p class="projects__overlay--description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>
                             </div>
@@ -186,7 +228,15 @@
                     <li class="projects__item">
                         <a class="projects__link" href="">
                             <div class="projects__overlay">
-                                <img src="./images/monitor.jpg" alt="Монитор" width="370">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="./images/desc/monitor.webp 1x, ./images/desc/monitor@2x.webp 2x" type="image/webp"/>
+                                    <source media="(min-width: 1200px)" srcset="./images/desc/monitor.jpg 1x, ./images/desc/monitor@2x.jpg 2x"/>
+                                    <source media="(min-width: 768px)" srcset="./images/tab/monitor.webp 1x, ./images/tab/monitor@2x.webp 2x" type="image/webp"/>
+                                    <source media="(min-width: 768px)" srcset="./images/tab/monitor.jpg 1x, ./images/tab/monitor@2x.jpg 2x"/>
+                                    <source media="(max-width: 767px)" srcset="./images/mob/monitor.webp 1x, ./images/mob/monitor@2x.webp 2x" type="image/webp"/>
+                                    <source media="(max-width: 767px)" srcset="./images/mob/monitor.jpg 1x, ./images/mob/monitor@2x.jpg 2x"/>
+                                    <img src="./images/desc/monitor.jpg" alt="Монитор">
+                                </picture>
                                 <p class="projects__overlay--description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>
                             </div>
@@ -199,7 +249,15 @@
                     <li class="projects__item">
                         <a class="projects__link" href="">
                             <div class="projects__overlay">
-                                <img src="./images/magazine.jpg" alt="Журнал" width="370">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="./images/desc/magazine.webp 1x, ./images/desc/magazine@2x.webp 2x" type="image/webp"/>
+                                    <source media="(min-width: 1200px)" srcset="./images/desc/magazine.jpg 1x, ./images/desc/magazine@2x.jpg 2x"/>
+                                    <source media="(min-width: 768px)" srcset="./images/tab/magazine.webp 1x, ./images/tab/magazine@2x.webp 2x" type="image/webp"/>
+                                    <source media="(min-width: 768px)" srcset="./images/tab/magazine.jpg 1x, ./images/tab/magazine@2x.jpg 2x"/>
+                                    <source media="(max-width: 767px)" srcset="./images/mob/magazine.webp 1x, ./images/mob/magazine@2x.webp 2x" type="image/webp"/>
+                                    <source media="(max-width: 767px)" srcset="./images/mob/magazine.jpg 1x, ./images/mob/magazine@2x.jpg 2x"/>
+                                    <img src="./images/desc/magazine.jpg" alt="Журнал">
+                                </picture>
                                 <p class="projects__overlay--description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>
                             </div>
@@ -212,7 +270,15 @@
                     <li class="projects__item">
                         <a class="projects__link" href="">
                             <div class="projects__overlay">
-                                <img src="./images/label.jpg" alt="Лейбл" width="370">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="./images/desc/label.webp 1x, ./images/desc/label@2x.webp 2x" type="image/webp"/>
+                                    <source media="(min-width: 1200px)" srcset="./images/desc/label.jpg 1x, ./images/desc/label@2x.jpg 2x"/>
+                                    <source media="(min-width: 768px)" srcset="./images/tab/label.webp 1x, ./images/tab/label@2x.webp 2x" type="image/webp"/>
+                                    <source media="(min-width: 768px)" srcset="./images/tab/label.jpg 1x, ./images/tab/label@2x.jpg 2x"/>
+                                    <source media="(max-width: 767px)" srcset="./images/mob/label.webp 1x, ./images/mob/label@2x.webp 2x" type="image/webp"/>
+                                    <source media="(max-width: 767px)" srcset="./images/mob/label.jpg 1x, ./images/mob/label@2x.jpg 2x"/>
+                                    <img src="./images/desc/label.jpg" alt="Лейбл">
+                                </picture>
                                 <p class="projects__overlay--description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>
                             </div>
@@ -225,7 +291,15 @@
                     <li class="projects__item">
                         <a class="projects__link" href="">
                             <div class="projects__overlay">
-                                <img src="./images/computer.jpg" alt="Ноутбук" width="370">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="./images/desc/computer.webp 1x, ./images/desc/computer@2x.webp 2x" type="image/webp"/>
+                                    <source media="(min-width: 1200px)" srcset="./images/desc/computer.jpg 1x, ./images/desc/computer@2x.jpg 2x"/>
+                                    <source media="(min-width: 768px)" srcset="./images/tab/computer.webp 1x, ./images/tab/computer@2x.webp 2x" type="image/webp"/>
+                                    <source media="(min-width: 768px)" srcset="./images/tab/computer.jpg 1x, ./images/tab/computer@2x.jpg 2x"/>
+                                    <source media="(max-width: 767px)" srcset="./images/mob/computer.webp 1x, ./images/mob/computer@2x.webp 2x" type="image/webp"/>
+                                    <source media="(max-width: 767px)" srcset="./images/mob/computer.jpg 1x, ./images/mob/computer@2x.jpg 2x"/>
+                                    <img src="./images/desc/computer.jpg" alt="Ноутбук">
+                                </picture>
                                 <p class="projects__overlay--description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>
                             </div>
