@@ -601,8 +601,7 @@ a:hover, a:focus {
 
 @media screen and (max-width: 767px) {
   .mobile-menu {
-    position: absolute;
-    z-index: 10;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -619,6 +618,7 @@ a:hover, a:focus {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    z-index: 2;
   }
   .mobile-menu__nav-list {
     margin-bottom: 302px;
