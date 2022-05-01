@@ -1,5 +1,6 @@
 .navigation {
     display: flex;
+    height: 100%;
   }
   .nav-list__link--active,
   .mobile-menu__nav-link--active {
@@ -37,6 +38,9 @@
       color: var(--text-color-accent);
     }
   }
+  .nav-list__item{
+    height: 100%;
+  }
   .nav-list__item:not(:last-child) {
     margin-right: 50px;
   }
@@ -51,6 +55,10 @@
     position: relative;
     color: currentColor;
     display: flex;
+    // justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .nav-list__link--active{
@@ -63,7 +71,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    bottom: -33px;
+    bottom: 0px;
     background-image: url("../images/svg/hover.svg");
   }
 
