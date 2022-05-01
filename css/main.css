@@ -78,14 +78,14 @@ a:hover, a:focus {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
 @media screen and (min-width: 480px) {
   .container {
+    margin-left: auto;
+    margin-right: auto;
     width: 480px;
   }
 }
@@ -1032,8 +1032,6 @@ a:hover, a:focus {
 
 .header {
   position: relative;
-  display: flex;
-  align-items: center;
   border-bottom: 1px solid var(--border-color-header);
   height: 60px;
 }
@@ -1042,6 +1040,7 @@ a:hover, a:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
 }
 
 @media screen and (min-width: 768px) {
