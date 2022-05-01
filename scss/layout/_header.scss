@@ -1,8 +1,9 @@
 .header {
   position: relative;
+  display: flex;
+  align-items: center;
   border-bottom: 1px solid var(--border-color-header);
-  padding-top: 16px;
-  padding-bottom: 16px;
+  height: 60px;
 }
 
 .header__container {
@@ -16,8 +17,6 @@
 //768 +
 @media screen and (min-width: 768px) {
   .header {
-    padding-top: 21px;
-    padding-bottom: 21px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -27,7 +26,6 @@
 //1200 +
 @media screen and (min-width: 1200px) {
   .header {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    height: 80px;
   }
 }

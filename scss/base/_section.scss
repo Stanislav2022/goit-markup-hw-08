@@ -16,11 +16,7 @@
 .section--other-background {
   background-color: var(--background-color-btn-lite);
 }
-@media screen and (max-width: 1199px) {
-  .section__title--missing {
-      display: none;
-  }
-}
+
 @media screen and (min-width: 1200px) {
     .section {
         padding-top: 94px;
@@ -31,6 +27,4 @@
       margin-bottom: 50px;
     }
 }
-.section--no-padding-top {
-  padding-top: 0px;
-}
+

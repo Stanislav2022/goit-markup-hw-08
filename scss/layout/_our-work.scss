@@ -1,10 +1,12 @@
-@media screen and (max-width: 1200px) {
-    .our-work {
-        display: none;
+.section--missing {
+    display:none;
     }
-}
 
 @media screen and (min-width: 1200px) {
+    .section--missing {
+        display:block;
+        }
+
     .our-work {
     display: flex;
     justify-content: space-between;
